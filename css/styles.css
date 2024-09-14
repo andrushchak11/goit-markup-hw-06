@@ -1,11 +1,30 @@
+/* ================COMMON STYLES================ */
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
     background-color: #fff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
 ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
     list-style-type: none;
+}
+
+img {
+    display: block;
 }
 
 a {
@@ -22,8 +41,60 @@ a {
     color: #4d5ae5;
 }
 
+.section-title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    text-transform: capitalize
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.container {
+    max-width: 1440px;
+    padding-left: 156px;
+    padding-right: 156px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+/* ================/COMMON STYLES================ */
+
+/* ================HEADER STYLES================ */
+
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .header-logo .logo-part {
     color: #2e2f42;
+}
+
+.nav-list {
+    display: flex;
+    column-gap: 40px;
 }
 
 .nav-link {
@@ -32,6 +103,10 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 
 .contacts {
@@ -51,6 +126,10 @@ a {
 .contacts-link:focus {
     color: #404bbf;
 }
+
+/* ================/HEADER STYLES================ */
+
+/* ================HERO STYLES================ */
 
 .hero-section {
     background-color: #2e2f42;
@@ -80,6 +159,10 @@ a {
     background-color: #404bbf;
 }
 
+/* ================/HERO STYLES================ */
+
+/* ================SERVICES STYLES================ */
+
 .services-title {
     font-weight: 500;
     font-size: 20px;
@@ -96,15 +179,9 @@ a {
     color: #434455;
 }
 
-.section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-    letter-spacing: 0.02em;
-    text-align: center;
-    color: #2e2f42;
-    text-transform: capitalize
-}
+/* ================/SERVICES STYLES================ */
+
+/* ================TEAM STYLES================ */
 
 .team-section {
     background-color: #f4f4fd;
@@ -131,6 +208,10 @@ a {
     text-align: center;
 }
 
+/* ================/TEAM STYLES================ */
+
+/* ================PORTFOLIO STYLES================ */
+
 .portfolio-title {
     font-weight: 500;
     font-size: 20px;
@@ -145,6 +226,10 @@ a {
     line-height: 1.5;
     letter-spacing: 0.02em;
 }
+
+/* ================/PORTFOLIO STYLES================ */
+
+/* ================FOOTER STYLES================ */
 
 .page-footer {
     background-color: #2e2f42;
@@ -161,3 +246,5 @@ a {
     letter-spacing: 0.02em;
     color: #f4f4fd;
 }
+
+/* ================/FOOTER STYLES================ */
