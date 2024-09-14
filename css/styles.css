@@ -85,6 +85,9 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.page-header {
     border-bottom: 1px solid #e7e9fc;
 }
 
@@ -144,6 +147,7 @@ a {
 
 .hero-section {
     background-color: #2e2f42;
+    padding: 188px 0;
 }
 
 .main-title {
@@ -153,6 +157,7 @@ a {
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    max-width: 496px;
 }
 
 .cta-button {
@@ -163,6 +168,11 @@ a {
     letter-spacing: 0.04em;
     color: #fff;
     cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
 }
 
 .cta-button:hover,
