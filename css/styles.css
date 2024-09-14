@@ -184,12 +184,22 @@ a {
 
 /* ================SERVICES STYLES================ */
 
+.services-list {
+    display: flex;
+    gap: 24px;
+}
+
+.services-item {
+    width: calc((100% - 24px * 3) / 4);
+}
+
 .services-title {
     font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    margin-bottom: 8px;
 }
 
 .services-text {
