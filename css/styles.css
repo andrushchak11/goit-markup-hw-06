@@ -314,12 +314,8 @@ a {
     padding: 100px 0;
 }
 
-.page-footer .container {
-    display: inline-block;
-}
-
 .footer-logo {
-    display: block;
+    display: inline-block;
     margin-bottom: 16px;
 }
 
