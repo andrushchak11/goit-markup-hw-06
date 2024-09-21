@@ -318,7 +318,7 @@ a {
     height: 40px;
 }
 
-.team-icon {
+.team-link-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -331,12 +331,12 @@ a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.team-icon:hover,
-.team-icon:focus {
+.team-link-icon:hover,
+.team-link-icon:focus {
     background-color: #404bbf;
 }
 
-.team-icon.icon {
+.team-icon {
     fill: #f4f4fd;
 }
 
