@@ -336,6 +336,10 @@ a {
     background-color: #404bbf;
 }
 
+.team-icon.icon {
+    fill: #f4f4fd;
+}
+
 /* ================/TEAM STYLES================ */
 
 /* ================PORTFOLIO STYLES================ */
