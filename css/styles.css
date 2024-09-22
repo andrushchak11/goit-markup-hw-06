@@ -435,7 +435,6 @@ a {
 
 .footer-content {
     margin-right: 120px;
-    margin-left: 156px;
 }
 
 .footer-logo {
@@ -454,6 +453,10 @@ a {
     letter-spacing: 0.02em;
     color: #f4f4fd;
     max-width: 264px;
+}
+
+.footer-social {
+    margin-left: auto;
 }
 
 .footer-social-text {
@@ -487,12 +490,13 @@ a {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.footer-link:hover {
-    background-color: #31d0aa;
+.footer-link:hover,
+.footer-link:focus {
+background-color: #31d0aa;
 }
 
 .footer-link-icon {
-    fill: #f4f4f4;
+    fill: #f4f4fd;
 }
 
 /* ================/FOOTER STYLES================ */
