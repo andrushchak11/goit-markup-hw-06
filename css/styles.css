@@ -81,20 +81,19 @@ a {
 
 /* ================HEADER STYLES================ */
 
-.page-header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .page-header {
     background-color: #fff;
     border-bottom: 1px solid #e7e9fc;
     position: fixed;
-    z-index: 9999999;
+    z-index: 99999;
     width: 100%;
     box-shadow: 0 1px 6px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 2px 1px 0 rgba(46, 47, 66, 0.08);
+}
 
+.page-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .header-nav {
@@ -178,6 +177,8 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .hero-section {
@@ -496,3 +497,238 @@ background-color: #31d0aa;
 }
 
 /* ================/FOOTER STYLES================ */
+
+/* ================MODAL STYLES================ */
+
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    z-index: 999999;
+    background-color: rgba(46, 47, 66, 0.4);
+
+    opacity: 0;
+    pointer-events: none;
+
+    transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-backdrop.is-open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.modal {
+    width: 408px;
+    height: 80%;
+    max-height: 584px;
+    background-color: #fcfcfc;
+    overflow: auto;
+    padding: 72px 24px 24px;
+    border-radius: 4px;
+    position: relative;
+}
+
+.modal-close-btn {
+    background-color: #e7e9fc;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+    padding: 0;
+    line-height: 0;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    fill: #2e2f42;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    background-color: #404bbf;
+    fill: #ffffff;
+}
+
+.modal-slogan {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
+    margin-bottom: 16px;
+}
+
+.feedback-form-field-wrapper {
+    margin-bottom: 8px;
+}
+
+.feedback-form-field-label {
+    display: block;
+    margin-bottom: 4px;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16667;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.feedback-form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 0 38px;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form-input:focus {
+    outline: none;
+    border-color: #4d5ae5;
+}
+
+.feedback-form-input-wrapper {
+    position: relative;
+}
+
+.feedback-form-input-icon {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form-input:focus + .feedback-form-input-icon {
+    fill: #4d5ae5;
+}
+
+.feedback-form-comment {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 8px 16px;
+    resize: none;
+
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #2e2f42;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form-comment:focus {
+    outline: none;
+    border-color: #4d5ae5;
+}
+
+.feedback-form-comment::placeholder {
+    color: rgba(46, 47, 66, 0.4);
+}
+
+.feedback-form-checkbox-wrapper {
+    margin-bottom: 24px;
+}
+
+.feedback-form-checkbox-label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8e8f99;
+}
+
+.feedback-form-policy-link {
+    line-height: 1.3;
+    text-decoration: underline;
+    color: #4d5ae5;
+}
+
+
+.feedback-form-custom-checkbox {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    cursor: pointer;
+    margin-right: 8px;
+}
+
+.feedback-form-custom-checkmark {
+    fill: transparent;
+}
+
+.feedback-form-checkbox:checked 
++ .feedback-form-checkbox-label
+> .feedback-form-custom-checkbox {
+    background-color: #404bbf;
+    border-color: #404bbf;
+}
+
+.feedback-form-checkbox:checked 
++ .feedback-form-checkbox-label 
+> .feedback-form-custom-checkbox 
+> .feedback-form-custom-checkmark {
+    fill: #f4f4fd;
+}
+
+.feedback-form-checkbox:focus 
++ .feedback-form-checkbox-label
+> .feedback-form-custom-checkbox {
+    border-color: #4d5ae5;
+}
+
+.feedback-form-btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.feedback-form-submit-btn {
+    border-radius: 4px;
+    background-color: #4d5ae5;
+    min-width: 169px;
+    height: 56px;
+    padding: 0 32px;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+    border: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    text-align: center;
+    color: #fff;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.feedback-form-submit-btn:hover,
+.feedback-form-submit-btn:focus {
+    background-color: #404bbf;
+}
+
+/* ================/MODAL STYLES================ */

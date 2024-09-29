@@ -494,5 +494,102 @@
             </div>
         </div>
     </footer>
+
+    <div class="modal-backdrop">
+        <div class="modal">
+            <button class="modal-close-btn" type="button">
+                <svg class="modal-close-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close"></use>
+                </svg>
+            </button>
+            <p class="modal-slogan">
+                Leave your contacts and we will call you back
+            </p>
+            
+            <form class="feedback-form">
+                <div class="feedback-form-field-wrapper">
+                    <label class="feedback-form-field-label" for="user-name">Name</label>
+                    <div class="feedback-form-input-wrapper">
+                        <input 
+                            class="feedback-form-input" 
+                            type="text"
+                            id="user-name"
+                            name="user-name"
+                            required 
+                        />
+                        <svg class="feedback-form-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="feedback-form-field-wrapper">
+                    <label class="feedback-form-field-label" for="user-phone">Phone</label>
+                    <div class="feedback-form-input-wrapper">
+                        <input 
+                            class="feedback-form-input" 
+                            type="text"
+                            id="user-phone"
+                            name="user-phone"
+                            required 
+                        />
+                        <svg class="feedback-form-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="feedback-form-field-wrapper">
+                    <label class="feedback-form-field-label" for="user-email">Email</label>
+                    <div class="feedback-form-input-wrapper">
+                        <input 
+                            class="feedback-form-input" 
+                            type="text"
+                            id="user-email"
+                            name="user-email"
+                            required 
+                        />
+                        <svg class="feedback-form-input-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="feedback-form-field-wrapper">
+                    <label class="feedback-form-field-label" for="user-comment">Comment</label>
+                    <textarea 
+                        class="feedback-form-comment"
+                        id="user-comment"
+                        name="user-comment" 
+                        placeholder="Text input">
+                    </textarea>
+                </div>
+
+                <div class="feedback-form-checkbox-wrapper">
+                    <input 
+                        class="feedback-form-checkbox visually-hidden" 
+                        type="checkbox"
+                        id="privacy-policy"
+                        name="privacy-policy"
+                        value="true"
+                        required
+                        />
+                        <label class="feedback-form-checkbox-label" for="privacy-policy">
+                            <span class="feedback-form-custom-checkbox">
+                                <svg class="feedback-form-custom-checkmark" width="10" height="8">
+                                    <use href="./images/icons.svg#icon-checkmark"></use>
+                                </svg>
+                            </span>
+                            I accept the terms and conditions of the 
+                            <a class="feedback-form-policy-link" href="">Privacy Policy</a>
+                        </label>
+                </div>
+
+                <div class="feedback-form-btn-wrapper">
+                    <button class="feedback-form-submit-btn" type="submit">Send</button>
+                </div>
+            </form>
+        </div>
+    </div>
 </body>
 </html>
