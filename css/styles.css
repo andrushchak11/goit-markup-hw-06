@@ -528,6 +528,8 @@ background-color: #31d0aa;
     line-height: 2;
     letter-spacing: 0.04em;
     color: #fff;
+    
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-form-input::placeholder {
@@ -545,7 +547,7 @@ background-color: #31d0aa;
 
     border-radius: 4px;
     padding: 8px 24px;
-    width: 165px;
+    min-width: 165px;
     height: 40px;
     background-color: #4d5ae5;
     border: none;
@@ -773,7 +775,7 @@ background-color: #31d0aa;
     margin-right: 8px;
     fill: transparent;
 
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .feedback-form-checkbox:checked 
