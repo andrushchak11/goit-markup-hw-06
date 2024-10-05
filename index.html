@@ -1,78 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <link rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" 
-    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer" 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
     <link
-    rel="stylesheet" 
-    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css" 
-    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg==" 
-    crossorigin="anonymous" 
-    referrerpolicy="no-referrer"
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
 
-    <link href="./css/styles.css" rel="stylesheet"/>
-</head>
-<body>
+    <link href="./css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
     <!-- Header -->
     <header class="page-header">
-    <div class="container">
+      <div class="container">
         <nav class="header-nav">
-            <a class="logo header-logo" 
-            href="./index.html">Web<span class="logo-part">Studio</span></a>
+          <a class="logo header-logo" href="./index.html"
+            >Web<span class="logo-part">Studio</span></a
+          >
 
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link studio-link" 
-                    href="./index.html">Studio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link portfolio-link" 
-                    href="">Portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link contacts-link-nav" 
-                    href="">Contacts</a>
-                </li>
-            </ul>
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link studio-link" href="./index.html">Studio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link portfolio-link" href="">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link contacts-link" href="">Contacts</a>
+            </li>
+          </ul>
         </nav>
         <address class="contacts">
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-                </li>
-                <li class="contacts-item">
-                    <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a>
-                </li>
-            </ul>
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              <a class="contacts-link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contacts-item">
+              <a class="contacts-link" href="tel:+110001111111"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
         </address>
-    </div>
+
+        <button class="burger-btn" type="button">
+          <svg class="burger-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mobile-menu is-open">
+        <div class="container mobile-menu-container">
+          <button class="mobile-menu-close" type="button">
+            <svg class="mobile-menu-close-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+
+          <nav class="mobile-menu-nav">
+            <ul class="mobile-menu-nav-list">
+              <li class="mobile-menu-nav-item">
+                <a
+                  class="mobile-menu-nav-link mobile-menu-studio-link"
+                  href="./index.html"
+                  >Studio</a
+                >
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a
+                  class="mobile-menu-nav-link mobile-menu-portfolio-link"
+                  href=""
+                  >Portfolio</a
+                >
+              </li>
+              <li class="mobile-menu-nav-item">
+                <a
+                  class="mobile-menu-nav-link mobile-menu-contacts-link"
+                  href=""
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+
+          <address class="mobile-menu-contacts">
+            <ul class="mobile-menu-contacts-list">
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link phone-number"
+                  href="tel:+110001111111"
+                  >+11 (000) 111-11-11</a
+                >
+              </li>
+
+              <li class="mobile-menu-contacts-item">
+                <a
+                  class="mobile-menu-contacts-link email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </address>
+
+          <ul class="mobile-menu-icons-line">
+            <li class="mobile-menu-icons-item">
+              <a class="mobile-menu-link-icon" href="">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-icons-item">
+              <a class="mobile-menu-link-icon" href="">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-icons-item">
+              <a class="mobile-menu-link-icon" href="">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="mobile-menu-icons-item">
+              <a class="mobile-menu-link-icon" href="">
+                <svg class="mobile-menu-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </header>
 
     <main class="page-main">
-        <!-- Hero Section -->
-        <section class="hero-section section">
+      <!-- Hero Section -->
+      <!-- <section class="hero-section section">
             <div class="container hero-container">
                 <h1 class="main-title">Effective Solutions for Your Business</h1>
                 <button class="cta-button" type="button">Order Service</button>
             </div>
-        </section>
+        </section> -->
 
-        <!-- Services -->
-        <section class="services-section section">
+      <!-- Services -->
+      <!-- <section class="services-section section">
         <div class="container services-container">
             <h2 class="visually-hidden">Servisces</h2>
             <ul class="services-list">
@@ -125,10 +227,10 @@
                 </li>
             </ul>
         </div>
-        </section>
+        </section> -->
 
-        <!-- Out Team -->
-        <section class="team-section section">
+      <!-- Out Team -->
+      <!-- <section class="team-section section">
         <div class="container team-container">
             <h2 class="section-title">Our Team</h2>
 
@@ -322,10 +424,10 @@
                 </li>
             </ul>
         </div>
-        </section>
+        </section> -->
 
-        <!-- Portfolio -->
-        <section class="portfolio-section section">
+      <!-- Portfolio -->
+      <!-- <section class="portfolio-section section">
         <div class="container portfolio-container">
             <h2 class="section-title">Our Portfolio</h2>
             <ul class="portfolio-list">
@@ -444,11 +546,11 @@
                 </li>
             </ul>
         </div>
-        </section>
+        </section> -->
     </main>
 
     <!-- Footer -->
-    <footer class="page-footer">
+    <!-- <footer class="page-footer">
         <div class="footer-container container">
             <div class="footer-content">
                 <a class="logo footer-logo" href="./index.html">Web<span class="logo-part">Studio</span></a>
@@ -511,10 +613,10 @@
                 </form>
             </div>
         </div>
-    </footer>
+    </footer> -->
 
     <!-- Modal -->
-    <div class="modal-backdrop">
+    <!-- <div class="modal-backdrop">
         <div class="modal">
             <button class="modal-close-btn" type="button">
                 <svg class="modal-close-icon" width="8" height="8">
@@ -602,6 +704,6 @@
                 <button class="feedback-form-submit-btn" type="submit">Send</button>
             </form>
         </div>
-    </div>
-</body>
+    </div> -->
+  </body>
 </html>
