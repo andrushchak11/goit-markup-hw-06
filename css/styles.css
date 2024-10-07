@@ -205,12 +205,14 @@ a {
   .contacts-list {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-
-    display: block;
     padding-top: 16px;
     padding-bottom: 16px;
+    gap: 12px;
   }
+
+  /* .contacts-item:first-child {
+    margin-bottom: 12px;
+  } */
 
   .contacts-link {
     font-size: 12px;
@@ -403,7 +405,7 @@ a {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url("../images/people-office.jpg");
+    url("../images/mobile-people-office.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -421,7 +423,7 @@ a {
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
       ),
-      url(../images/people-office@2x.jpg);
+      url(../images/mobile-people-office@2x.jpg);
   }
 }
 
@@ -468,6 +470,12 @@ a {
   .hero-section {
     padding: 112px 0;
     max-width: 768px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/tablet-people-office.jpg");
   }
 
   .main-title {
@@ -478,16 +486,44 @@ a {
     font-size: 56px;
     line-height: 1.07;
   }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/tablet-people-office@2x.jpg);
+    }
+  }
 }
 
 @media screen and (min-width: 1158px) {
   .hero-section {
     padding: 188px 0;
     max-width: 1440px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url("../images/desktop-people-office.jpg");
   }
 
   .main-title {
     margin-bottom: 48px;
+  }
+
+  @media (min-resolution: 192dpi) {
+    .hero-section {
+      background-image: linear-gradient(
+          to bottom,
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/desktop-people-office@2x.jpg);
+    }
   }
 }
 
@@ -928,14 +964,11 @@ a {
 }
 
 @media screen and (min-width: 768px) {
-  .page-footer {
-    padding-left: 108px;
-  }
-
   .footer-container {
     justify-content: left;
     text-align: left;
     column-gap: 24px;
+    padding-left: 108px;
   }
 
   .footer-social-text {
@@ -977,13 +1010,10 @@ a {
 }
 
 @media screen and (min-width: 1158px) {
-  .page-footer {
-    padding: 100px 0;
-  }
-
   .footer-container {
     gap: 0;
     flex-wrap: nowrap;
+    padding-left: 15px;
   }
 
   .footer-content {
