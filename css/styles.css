@@ -108,6 +108,7 @@ a {
   display: flex;
   justify-content: space-between;
   background-color: #fff;
+  align-items: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -205,14 +206,8 @@ a {
   .contacts-list {
     display: flex;
     flex-direction: column;
-    padding-top: 16px;
-    padding-bottom: 16px;
     gap: 12px;
   }
-
-  /* .contacts-item:first-child {
-    margin-bottom: 12px;
-  } */
 
   .contacts-link {
     font-size: 12px;
